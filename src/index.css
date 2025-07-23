@@ -1,13 +1,107 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.app-divider {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr; /* Two equal columns */
+  height: 100vh;                  /* Full viewport height */
+}
+
+.timer-section{ 
+  background-color: rgb(247, 233, 208);
+}
+
+.timer-wrapper {
+  display: flex;
+  justify-content: end;
+  transform: translateX(-60px);
+}
+
+.timer-container{ 
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;           /* full viewport height */
+  flex-direction: column; /* stack items vertically */
+  background-color: rgb(247, 233, 208);
+  flex: 0.6;
+}
+
+.timer-display {
+  font-size: 96px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+button{
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #8b8888; /* Green */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} 
+
+button:hover {
+  background-color: #5c5a5a; /* Darker shade on hover */
+  transition: 0.4s;
+}
+
+.egg-section{ 
+  background-color: rgb(247, 233, 208);
+}
+
+.button-group {
+  display: flex;
+  gap: 12px; /* space between buttons */
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.egg-container {
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  height: 100vh;           /* full viewport height */
+  flex-direction: column; /* stack items vertically */
+  gap: 20px;
+  transform: translate(-55px, -45px);
+}
+
+.pet-icons {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.pet-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.collected-pets{ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
