@@ -21,8 +21,9 @@ function App() {
 
   return (
     <>
-    <div> 
-      Egg-odoro
+    <div className="header-title"> 
+      <p>🐣 Egg-odoro</p> 
+      <p>Crack eggs. Hatch pets. Stay focused.</p>
     </div>
     <div className='app-divider'> 
       <section className='timer-section'> 
